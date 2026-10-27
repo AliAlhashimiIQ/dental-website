@@ -1,0 +1,6 @@
+{
+  "name": "لُما لطب الأسنان — Luma Dental",
+  "description": "عيادة لُما لطب الأسنان — استشارات تبييض الأسنان والعناية التجميلية الهادئة بتجربة رقمية متقنة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <defs>
+    <linearGradient id="lightCanvas" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="50%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="enamelShell" x1="240" y1="100" x2="560" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#F0F9FF" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+    <linearGradient id="dentinCore" x1="300" y1="180" x2="500" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="100%" stop-color="#7DD3FC" />
+    </linearGradient>
+    <filter id="specimenShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#lightCanvas)" />
+
+  <!-- Subtle Architectural Grid -->
+  <g stroke="#0F172A" stroke-opacity="0.06" stroke-width="1">
+    <line x1="60" y1="100" x2="740" y2="100" />
+    <line x1="60" y1="300" x2="740" y2="300" />
+    <line x1="60" y1="500" x2="740" y2="500" />
+    <line x1="200" y1="60" x2="200" y2="540" />
+    <line x1="400" y1="60" x2="400" y2="540" />
+    <line x1="600" y1="60" x2="600" y2="540" />
+  </g>
+
+  <!-- Optical Refraction Rings -->
+  <circle cx="400" cy="285" r="210" stroke="#0284C7" stroke-opacity="0.18" stroke-width="1.2" />
+  <circle cx="400" cy="285" r="165" stroke="#0F172A" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="5 5" />
+
+  <!-- Cross-Sectional Anatomical Molar Crown Diagram -->
+  <g filter="url(#specimenShadow)">
+    <!-- Outer Translucent Enamel Layer -->
+    <path
+      d="M275 190
+         C275 130, 345 115, 400 148
+         C455 115, 525 130, 525 190
+         C525 250, 505 310, 485 375
+         C472 420, 452 465, 435 465
+         C418 465, 412 400, 400 400
+         C388 400, 382 465, 365 465
+         C348 465, 328 420, 315 375
+         C295 310, 275 250, 275 190 Z"
+      fill="url(#enamelShell)"
+      stroke="#0F172A"
+      stroke-width="2"
+    />
+
+    <!-- Inner Dentin Refractive Layer -->
+    <path
+      d="M312 208
+         C312 165, 360 155, 400 180
+         C440 155, 488 165, 488 208
+         C488 255, 472 305, 458 355
+         C448 388, 438 415, 428 415
+         C418 415, 410 370, 400 370
+         C390 370, 382 415, 372 415
+         C362 415, 352 388, 342 355
+         C328 305, 312 255, 312 208 Z"
+      fill="url(#dentinCore)"
+      fill-opacity="0.65"
+      stroke="#0284C7"
+      stroke-width="1.5"
+      stroke-dasharray="3 3"
+    />
+
+    <!-- Incident Light Ray & Subsurface Scattering Vectors -->
+    <line x1="150" y1="130" x2="335" y2="195" stroke="#0284C7" stroke-width="2" />
+    <circle cx="335" cy="195" r="4.5" fill="#0284C7" />
+    <line x1="335" y1="195" x2="445" y2="235" stroke="#38BDF8" stroke-width="1.75" stroke-dasharray="4 4" />
+    <line x1="335" y1="195" x2="230" y2="95" stroke="#0F172A" stroke-width="1.5" stroke-opacity="0.5" />
+  </g>
+
+  <!-- Callout Lines & Labels -->
+  <g stroke="#0F172A" stroke-width="1.2">
+    <line x1="505" y1="165" x2="555" y2="165" />
+    <circle cx="505" cy="165" r="3" fill="#0F172A" />
+    <line x1="478" y1="265" x2="555" y2="265" />
+    <circle cx="478" cy="265" r="3" fill="#0284C7" />
+  </g>
+
+  <text x="565" y="160" fill="#0F172A" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="start">طبقة المينا (Enamel)</text>
+  <text x="565" y="180" fill="#475569" font-family="sans-serif" font-size="12" text-anchor="start">نفاذية ضوئية عالية للسطح</text>
+
+  <text x="565" y="260" fill="#0F172A" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="start">طبقة العاج (Dentin)</text>
+  <text x="565" y="280" fill="#475569" font-family="sans-serif" font-size="12" text-anchor="start">العمق اللوني الأساسي للسن</text>
+
+  <text x="80" y="90" fill="#475569" font-family="monospace" font-size="12">FIG. 02 — ENAMEL REFRACTION &amp; SUITABILITY STUDY</text>
+  <text x="720" y="535" fill="#334155" font-family="sans-serif" font-size="14" text-anchor="end">دراسة تفاعل الضوء مع طبقة المينا لتقييم ملاءمة التبييض</text>
+</svg>

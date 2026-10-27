@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" fill="none">
+  <defs>
+    <linearGradient id="wallLight" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+    <linearGradient id="navyPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B192C" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="daylightBeam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#E0F2FE" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Architectural Limestone Background -->
+  <rect width="1200" height="675" fill="url(#wallLight)" />
+
+  <!-- Left Deep Navy Acoustic Architectural Wall -->
+  <rect x="0" y="0" width="420" height="540" fill="url(#navyPanel)" />
+
+  <!-- Tall Architectural Daylight Louvers -->
+  <g opacity="0.9">
+    <rect x="460" y="40" width="75" height="440" fill="#F0F9FF" />
+    <rect x="555" y="40" width="75" height="440" fill="#F0F9FF" />
+    <rect x="650" y="40" width="75" height="440" fill="#F0F9FF" />
+    <rect x="745" y="40" width="75" height="440" fill="#F0F9FF" />
+    <!-- Diagonal Daylight Caustics -->
+    <polygon points="460,40 820,40 1080,540 620,540" fill="url(#daylightBeam)" />
+  </g>
+
+  <!-- Minimalist Travertine Consultation Desk & Ceramic Display -->
+  <rect x="0" y="540" width="1200" height="135" fill="#E2E8F0" />
+  <line x1="0" y1="540" x2="1200" y2="540" stroke="#94A3B8" stroke-width="1.5" />
+
+  <!-- Travertine Consultation Table -->
+  <rect x="280" y="410" width="540" height="26" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5" />
+  <rect x="330" y="436" width="36" height="115" fill="#1E293B" />
+  <rect x="730" y="436" width="36" height="115" fill="#1E293B" />
+
+  <!-- Framed Ceramic Tooth Study on Wall -->
+  <rect x="110" y="110" width="200" height="250" rx="4" fill="#112239" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1.5" />
+  <path d="M175 195 C175 165, 200 160, 210 175 C220 160, 245 165, 245 195 C245 225, 235 255, 225 285 C220 298, 214 298, 210 275 C206 298, 200 298, 195 285 C185 255, 175 225, 175 195 Z" fill="#F8FAFC" opacity="0.9" />
+
+  <!-- Subtle Label -->
+  <text x="1140" y="635" fill="#334155" font-family="sans-serif" font-size="16" text-anchor="end">تصور معماري لغرفة الاستشارة الهادئة — مفهوم لُما لطب الأسنان</text>
+</svg>
